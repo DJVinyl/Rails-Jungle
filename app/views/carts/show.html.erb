@@ -1,9 +1,11 @@
 <section class="cart-show">
-
+  <% if enhanced_cart.length == 0%>
+    <h2>Cart is Empty</h2>
+    <%= link_to 'Go Buy Some Stuff!', :root %>
+  <% else %>
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
-
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -32,6 +34,7 @@
     </table>
   </div>
 
+
   <div class="row">
     <div class="col-xs-12">
       <%= form_tag orders_path do %>
@@ -49,4 +52,5 @@
     </div>
   </div>
 
+  <% end %>
 </section>
