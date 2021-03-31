@@ -4,7 +4,6 @@
     <h1>Order #<%= @order.id %></h1>
     
   </header>
-
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
     <table class="table table-bordered">
@@ -21,6 +20,16 @@
         <%= render 'item', order_item: item %>
       <% end %>
     </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="4">
+          TOTAL:
+        </th>
+        <th>
+          <%= humanized_money_with_symbol @order.total_cents / 100.0 %>
+        </th>
+      </tr>
+    </tfoot>
     </table>
   </div>
 
