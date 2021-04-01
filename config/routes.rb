@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :categories, only: [:show]
 
   resources :about, only: [:index]
-  
+
   resource :cart, only: [:show] do
     post   :add_item
     post   :remove_item
@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show]
     resources :categories
+    resources :sales
   end
 
   get '/login' => 'sessions#new'
