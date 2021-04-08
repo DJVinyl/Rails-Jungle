@@ -25,6 +25,10 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * PostgreSQL 9.x
 * Stripe
 
+## Screenshots
+
+!["Image of Jungle"](https://raw.githubusercontent.com/DJVinyl/tinyapp/master/docs/Main%20Page.png)
+
 ## Functional Requirements
 
 This section lists the functional specs that our mentors will be sampling when evaluating your project submission.
