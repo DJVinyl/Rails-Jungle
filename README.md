@@ -27,7 +27,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
-!["Image of Jungle"](https://raw.githubusercontent.com/DJVinyl/tinyapp/master/docs/Main%20Page.png)
+!["Image of Jungle"](https://raw.githubusercontent.com/DJVinyl/Rails-Jungle/master/Pictures/Image%20of%20Jungle.png)
 
 ## Functional Requirements
 
